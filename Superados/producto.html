@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Supermercado Ecológico</title>
+    <link rel="stylesheet" href="ecomerce.css">
+  </head>
+  <body>
+    <header>
+      <h1>Supermercado Ecológico</h1>
+      <nav>
+        <ul>
+          <li><a href=index.html>Inicio</a></li>
+          <li><a href="producto.html">Productos</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="destacados">
+        <div class="titulo section">
+          <div class="buscador">
+            <input type="text" placeholder="Buscar producto...">
+            <button>Buscar</button>
+          </div>
+        <h2>Productos destacados</h2>
+        </div> 
+        </section>
+
+        <!-- START SECTION STORE -->
+
+        <section class="productos">
+        <div class="container">  
+        <div class="Col 1">      
+          <div class="item shadow mb-4">
+            <img class= "item-img" src=Pan.jpg alt="Producto 1">
+            <h3 class="item-title">Pan Integral</h3>
+            <div class="item-details">
+              <h4 class="item-price">10$</h4>
+              <p>Pan x 12 unidades Vanmaira</p>
+              <button class="item-button addToCart">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>  
+        <div class="producto">
+          <img src=granolachocolate.jpg alt="Producto 2">
+          <h3>Granola con cacao</h3>
+          <p>Granola de chocolate con cacao a granel</p>
+          <button class=" ">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src=Jugo.jpg alt="Producto 3">
+          <h3>Jugo Natural</h3>
+          <p>Jugo de naranja natural</p>
+          <button class="addToCart">Agregar al carrito</button>
+        </div>
+      </div>
+      </section>
+    </main>
+
+    <!-- END SECTION STORE -->
+
+    <!-- START SECTION SHOPPING CART   //quede en el 13:20 del video https://www.google.com/search?q=como+hacer+ecommerce+con+carrito+en+JS&oq=como+hacer+ecommerce+con+carrito+en+JS&aqs=chrome..69i57j33i160l4j33i22i29i30.12157j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:15ddd3b5,vid:dSbWJAXQ7cA -->
+    <section class="shopping-cart">
+      <div class="container">
+          <h1 class="text-center">CARRITO</h1>
+          <hr>
+          <div class="row">
+              <div class="col-6">
+                  <div class="shopping-cart-header">
+                      <h6>Producto</h6>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <div class="shopping-cart-header">
+                      <h6 class="text-truncate">Precio</h6>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="shopping-cart-header">
+                      <h6>Cantidad</h6>
+                  </div>
+              </div>
+          </div> 
+  
+        <!-- ? START SHOPPING CART ITEMS -->
+         <div class="shopping-cart-items shoppingCartitemsContainer">
+         </div>
+        <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row">
+              <div class="col-12">
+                  <div class="shopping-cart-total d-flex align-items-center">
+                      <p class="mb-0">Total</p>
+                      <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                      <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                          data-delay="2000">
+                          <div class="toast-header">
+                              <span>✅</span>
+                              <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="toast-body text-white">
+                              Se aumentó correctamente la cantidad
+                          </div>
+                      </div>
+                      <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                          data-target="#comprarModal">Comprar</button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- END TOTAL -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+      <p class="leyfin">Supermercado Ecológico &copy; 2023</p>
+    </footer>
+    <script src="ecomerce.js"></script>
+  </body>
+</html>
+

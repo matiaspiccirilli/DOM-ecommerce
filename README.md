@@ -34,7 +34,7 @@ Contributions are welcome! Feel free to submit pull requests to improve the proj
 
 The **SimpleDOM E-commerce** project was inspired by the desire to simplify e-commerce development and educate individuals about the underlying concepts.
 
----
+----
 
 Enjoy experimenting with **SimpleDOM E-commerce** and have fun learning the basics of building dynamic web applications! If you have any questions or suggestions, feel free to open an issue or reach out to us.
 
